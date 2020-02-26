@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>F1</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="../favicon.ico">
+        
+		<link rel="stylesheet" type="text/css" href="CSS/styles_index.css">
+		<link rel="stylesheet" type="text/css" href="CSS/timeline.css">
+		
+        <script type="text/javascript" src="JS/timeline.js" defer></script>
+        <script type="text/javascript" src="JS/main.js" defer></script>
+		
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Saira+Condensed&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		
+    </head>
+    <body>
+        <!--<header>
+            <h4 id="thing">Hello, World. Welcome to the website.</h4>
+        </header>-->
+        <nav>
+            
+        </nav>
+        <aside class="sidebar">
+            <header id="sidebar_header"></header>
+			<section id="sidebar_options">
+				<div class="tabLinkContainers" id="tlc_Seasons"><a class="tabLinks" onclick="switchTab(event, 'Seasons')" id="defaultOpen">Seasons</a></div> <!-- years/seasons -->
+				<div class="tabLinkContainers" id="tlc_GrandPrix"><a class="tabLinks" onclick="switchTab(event, 'GrandPrix')">Grand Prix</a></div>
+				<div class="tabLinkContainers" id="tlc_Teams"><a class="tabLinks" onclick="switchTab(event, 'Teams')">Teams</a></div> <!-- teams/drivers-->
+			</section>
+        </aside>
+        <main>
+            <!--<input id="request" type="button" onclick="clicku()" value="send request">-->
+			<section id="contentHeader">
+				<h1 id="contentHeader_title"></h1>
+			</section>
+				<section id="Seasons" class="tabContent">					
+					<div id="timeline"></div>
+					<div id="displayHolder">
+						<a id="yearDisplay"></a>
+						<a id="changeYear" onclick="click_ChangeYear()">Change Season</a>
+					</div>
+				</section>
+				<section id="GrandPrix" class="tabContent">
+					yote
+				</section>
+				<section id="Teams" class="tabContent">
+					yolo
+				</section>
+        </main>
+        <footer>
+        
+        </footer>
+    </body>
+</html>
+
+<!--https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure-->
+<!--https://www.bitdegree.org/learn/html5-semantic-tags-->

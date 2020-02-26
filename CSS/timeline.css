@@ -1,0 +1,103 @@
+html {
+	overflow-x: hidden;
+}
+
+.timeline-wrapper {
+	top:38px;
+/*	padding: 100px 0 100px 0;*/
+/*	padding: 45vh 0 45vh 0;*/
+	height: calc(100vh - 38px);
+	position: absolute;
+	
+	box-sizing: border-box;
+	
+	background-color: #333;
+	transition: background-color 1s, height 1s;
+/*	transition: height 1s;*/
+/*	transition: 1s;*/
+	z-index: 2;
+/*	border-left: red solid 20px;*/
+	
+}
+
+.line {
+	height: 55px;
+	width: 1200%;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+/*	bottom: 0;*/
+/*	margin: 0 auto;*/
+	position: absolute;
+/*	border-top: 2px solid #808080;*/
+	background-color: brown;
+	
+	display: none;
+	
+}
+
+.timeline {
+	top: 50%;
+	transform: translateY(-50%);
+	position: relative;
+	width: 100%;
+/*	padding: 20px 0;*/
+	padding: 0;
+/*	z-index: 5;*/
+	
+}
+
+.node-wrapper {
+	padding-right: 100px;
+	padding-left: 100px;
+	display: flex;
+	
+}
+
+.tl-node {
+	position: relative;
+	margin-right: 150px;
+	margin-left: 150px;
+	
+	
+}
+
+.pButton {
+	margin: 0;
+/*	font-size: .6rem;*/
+	position: absolute;
+/*	top: 50%;*/
+	transform: translateY(-50%) skew(-40deg);
+	width: 30px;
+/*	height: 30vh;*/
+	
+	
+	cursor: pointer;
+	
+/*	transition: 2s;*/
+	
+}
+
+.pButton:hover {
+	background-color: #f15737;
+/*	font-size: 70px;*/
+	width: 300px;
+	
+	transform: translateX(-25%) translateY(-50%) skew(-40deg);
+}
+
+.pButton:hover > .year {
+	font-size: 50px;
+	color: #333;
+}
+
+.year {
+	transform: skew(40deg);
+	font-family: 'Roboto', sans-serif;
+	color: #ddd;
+	text-align: center;
+	font-size: 40px;
+	letter-spacing: 4px;
+	
+	transform: opacity 1.5s;
+}
